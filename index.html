@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Mobile Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          class="search-form-input"
+          id="search-form-input"
+          required
+        />
+        <input type="submit" value="search" class="submit-button" />
+      </form>
+      <p class="weather-time" id="time"></p>
+      <h1 id="city"></h1>
+      <div class="display-temperature">
+        <h2 id="temperature"></h2>
+        <span class="c"></span>
+      </div>
+      <div id="icon"></div>
+
+      <p class="description" id="description"></p>
+      <div class="forecast-weathers" id="forecast">
+        <div class="forecast-details"></div>
+      </div>
+      <div class="loading" id="loading" style="display: none">Loading...</div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
