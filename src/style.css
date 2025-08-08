@@ -56,15 +56,15 @@ h2 {
   margin-top: 23px;
 }
 .current-img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .description {
   font-size: 10px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 .forecast-weathers {
@@ -94,7 +94,7 @@ h2 {
 
 @media (min-width: 600px) {
   body {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(40, 40, 40);
   }
 
   .container {

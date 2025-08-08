@@ -8,7 +8,7 @@ let iconMap = {
   "02n":
     "https://basmilius.github.io/weather-icons/production/line/all/overcast-night.svg",
   "03d":
-    "https://basmilius.github.io/weather-icons/production/line/all/clear-day.svg",
+    "https://basmilius.github.io/weather-icons/production/line/all/overcast.svg",
   "03n":
     "https://basmilius.github.io/weather-icons/production/line/all/overcast-night.svg",
   "04d":
