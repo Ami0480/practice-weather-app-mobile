@@ -56,7 +56,7 @@ function showElement(response) {
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img
     src="${iconAnimation}"
-    style="width:80px;height:80px"
+    class="current-img"
      />
 `;
 }
@@ -103,7 +103,7 @@ function forecastShowElement(response) {
       <div class="forecast-day">${day}</div>
       <img
         src="${iconUrl}"
-        style="width:60px;height:60px"
+        class="forecast-img"
         />
       <div class="forecast-temp">${temp}°C</div>
       </div>`;

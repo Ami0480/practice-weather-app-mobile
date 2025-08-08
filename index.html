@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-form">
+      <form id="search-form" class="search-form">
         <input
           type="search"
           placeholder="Enter a city.."
@@ -26,15 +26,21 @@
         />
         <input type="submit" value="search" class="submit-button" />
       </form>
-      <p class="weather-time" id="time"></p>
-      <h1 id="city"></h1>
-      <div class="display-temperature">
-        <h2 id="temperature"></h2>
-        <span class="c"></span>
+      <div class="current-weather-details">
+        <div>
+          <p class="weather-time" id="time"></p>
+          <h1 id="city" class="city"></h1>
+        </div>
+        <div class="current-display-temperature">
+          <div class="display-temperature">
+            <h2 id="temperature"></h2>
+            <span class="c">°C</span>
+          </div>
+          <div id="icon" class="icon"></div>
+          <p class="description" id="description"></p>
+        </div>
       </div>
-      <div id="icon"></div>
 
-      <p class="description" id="description"></p>
       <div class="forecast-weathers" id="forecast">
         <div class="forecast-details"></div>
       </div>

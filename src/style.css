@@ -2,8 +2,7 @@ body {
   background-color: black;
 }
 .container {
-  max-width: 375px;
-  height: 667px;
+  width: 375px;
   font-family: "Open Sans", sans-serif;
   color: white;
 
@@ -40,26 +39,28 @@ h1 {
   letter-spacing: 1px;
   margin: 0;
 }
+
 .display-temperature {
   display: flex;
   align-items: flex-start;
 }
 h2 {
   font-weight: bold;
-  font-size: 88px;
+  font-size: 60px;
   margin: 0;
 }
+
 .c {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
-  margin-top: 15px;
+  margin-top: 23px;
 }
-.weather-icon {
+.current-img {
   width: 80px;
   height: 80px;
 }
 .description {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -89,4 +90,71 @@ h2 {
 }
 .forecast-temp {
   font-size: 13px;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: rgb(216, 216, 216);
+  }
+
+  .container {
+    width: 600px;
+    background-color: black;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 15px;
+  }
+
+  .search-form {
+    text-align: center;
+  }
+  .search-form-input {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    margin-right: 20px;
+  }
+  .submit-button {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+  }
+
+  .weather-time {
+    font-size: 20px;
+  }
+  .city {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .current-weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px;
+  }
+  .current-display-temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .weather-time {
+    margin: 0;
+  }
+
+  .current-img {
+    width: 80px;
+    height: 80px;
+  }
+  .forecast-img {
+    width: 60px;
+    height: 60px;
+  }
+  .description {
+    margin: 0;
+  }
+
+  .forecast-weathers {
+    height: 100px;
+    margin: 0 50px;
+  }
 }
