@@ -100,12 +100,12 @@ function forecastShowElement(response) {
 
     forecastElement.innerHTML += `
       <div class="forecast-details">
-      <div class="forecast-day">${day}</div>
-      <img
+       <div class="forecast-day">${day}</div>
+       <img
         src="${iconUrl}"
         class="forecast-img"
         />
-      <div class="forecast-temp">${temp}°C</div>
+       <div class="forecast-temp">${temp}°C</div>
       </div>`;
   });
   console.log(response.data);
